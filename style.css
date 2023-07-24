@@ -1,0 +1,70 @@
+/* Estilo geral para o corpo da página */
+body {
+    font-family: monospace;
+    background: linear-gradient(#ea8d8d, #2f00d7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para a seção de localização */
+.location {
+    text-align: center;
+    
+}
+
+.location .city {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.location .date {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Estilo para a seção de informações atuais */
+.current {
+    text-align: center;
+    /* background: linear-gradient(#ea8d8d, #2f00d7); */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilo para a temperatura atual */
+.current .temp {
+    color: #ff6347;
+    font-size: 120px;
+    font-weight: 900;
+    margin: 30px 0;
+    text-shadow: 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.current .temp span {
+    font-weight: 200;
+    color: #777777;
+}
+
+/* Estilo para a descrição do clima atual */
+.current .weather {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a temperatura máxima e mínima */
+.current .hi-low {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
