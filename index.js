@@ -11,6 +11,7 @@ window.addEventListener('load' , () =>{
                 const tempElement = document.querySelector('.temp');
                 const weatherElement = document.querySelector('.weather');
                 const hiLowElement = document.querySelector('.hi-low');
+                const feelsElement = document.querySelector('.feelslike'); 
 
                 const city = data.name;
                 const date = new Date().toLocaleDateString('pt-BR');
@@ -18,12 +19,14 @@ window.addEventListener('load' , () =>{
                 const weatherDescription = data.weather[0].description;
                 const tempMin = data.main.temp_min;
                 const tempMax = data.main.temp_max;
+                const feelslike = data.main.feels_like;
 
                 cityElement.textContent = city;
-                dateElement.textContent = date;
+                dateElement.textContent = `${date}`;
                 tempElement.innerHTML = `${temperature.toFixed(1)}<span>°C</span>`;
                 weatherElement.textContent = weatherDescription;
                 hiLowElement.textContent = `${tempMin.toFixed(1)}°C / ${tempMax.toFixed(1)}°C`;
+                feelsElement.textContent = `${feelslike.toFixed(1)}°C`;
             })
             .catch((error) => {
                 console.error('Erro ao obter os dados da API:', error);
