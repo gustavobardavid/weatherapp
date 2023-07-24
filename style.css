@@ -1,7 +1,7 @@
 /* Estilo geral para o corpo da página */
 body {
     font-family: monospace;
-    background: linear-gradient(#ea8d8d, #2f00d7);
+    background: linear-gradient(#6c0707, #2f00d7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 
 .location .city {
     color: #ffffff;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -39,7 +39,7 @@ body {
 
 /* Estilo para a temperatura atual */
 .current .temp {
-    color: #ff6347;
+    color: #ffffff;
     font-size: 120px;
     font-weight: 900;
     margin: 30px 0;
@@ -62,9 +62,78 @@ body {
 }
 
 /* Estilo para a temperatura máxima e mínima */
-.current .hi-low {
+.current .hi-low, .feelslike {
     color: #ffffff;
     font-size: 24px;
     font-weight: 500;
     text-shadow: 0 3px rgba(0, 0, 0, 0.2);
 }
+ p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.2);
+ }
+
+.buscar {
+    width: 100%;
+}
+
+.buscar input {
+    width: 69%;
+    position: relative;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    /* visibility: hidden; */
+    
+}
+
+
+.buscar button {
+    background-color: #0059ff;
+    height:33px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    color:#ffffff;
+    font-size: medium;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* .buscar:hover input {
+    visibility: visible;
+} */
+
+.buscar span {
+    font-size: larger;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+       
+@media screen and (max-width: 500px) {
+     body {
+         height: auto;
+         width: auto;
+         margin: 55px 0px;
+     }
+     .current .temp {
+         font-size: 80px;
+     }
+     .current .weather {
+         font-size: 24px;
+     }
+     .current .hi-low, .feelslike {
+         font-size: 18px;
+     }
+}
+  
