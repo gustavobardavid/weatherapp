@@ -30,6 +30,12 @@ window.addEventListener('load' , () =>{
             });
     }
 
-getWeatherData('Lavras da Mangabeira'); 
+    getWeatherData('Lavras da Mangabeira'); 
+
+    let botao = document.querySelector('#botao');
+    botao.addEventListener('click',  () => {
+        let inputCity = document.querySelector('#input-city').value;
+        getWeatherData(inputCity);
+    })
 
 })
