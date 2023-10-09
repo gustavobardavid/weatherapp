@@ -1,7 +1,7 @@
 /* Estilo geral para o corpo da página */
 body {
     font-family: monospace;
-    background: linear-gradient(#6c0707, #2f00d7);
+    background: linear-gradient(to right, #010e1f, #010e1f);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ body {
 
 /* Estilo para a temperatura atual */
 .current .temp {
-    color: #ffffff;
+    color: #f18324;
     font-size: 120px;
     font-weight: 900;
     margin: 30px 0;
